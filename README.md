@@ -41,7 +41,7 @@ public class FooService {
     private static final String THREAD_POOL_KEY = "oneBiz";
     
     @Autowired
-    private hreadPoolPool threadPoolPool;
+    private ThreadPoolPool threadPoolPool;
 
     public void doSomethingWithThreadPool() {
         ThreadPoolExecutor executor = threadPoolPool.take(THREAD_POOL_KEY);
@@ -58,7 +58,7 @@ public class BarService {
     private static final String THREAD_POOL_KEY = "twoBiz";
 
     @Autowired
-    private hreadPoolPool threadPoolPool;
+    private ThreadPoolPool threadPoolPool;
 
     public void doSomethingWithThreadPool() {
         ThreadPoolExecutor executor = threadPoolPool.take(THREAD_POOL_KEY);
